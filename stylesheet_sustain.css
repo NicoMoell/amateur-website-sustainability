@@ -1,0 +1,462 @@
+a,
+p,
+h2 {
+
+  color: #fff;
+}
+
+
+nav {
+  background-color: #313c47;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+  border-right: 2px solid #fff;
+  padding-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  /* There is a transition and fading out effect when not hovering over the selected element of the list */
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+  /* The words get a border on the bottom as an underline when the user hovers over it */
+}
+
+nav ul li:last-child {
+  border-right: none;
+  /*Here only the last element of the list gets no line on the right, so the "last child" */
+}
+
+nav ul li a.active {
+  font-weight: bolder;
+  color: #313c47;
+  background-color: #fff;
+  /* The class is for highlighting the current site */
+  padding: 3px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+}
+
+header {
+  background-color: #313c47;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+#title {
+  font-size: 48px;
+  margin: 0;
+}
+
+#subtitle {
+
+  font-size: 24px;
+}
+
+html {
+
+  background-color: #313c47;
+  margin: 0px;
+  /* The background appears white (A border around the content) */
+  border: 50px solid #fff;
+
+}
+
+#Content {
+
+  box-shadow: 20px 20px 20px #313c47;
+  /* The place the content is on seems "elevated" because of the shadow */
+}
+
+#pic1_home {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 2px solid black;
+}
+
+#welcome_title {
+
+  text-align: center;
+
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#adver_welcome_text {
+
+  text-align: left;
+  padding: 1%;
+  padding-bottom: 0%;
+
+
+}
+
+#Cando {
+  list-style-type: none;
+  padding: 1%;
+  padding-top: 0%;
+  margin: 0;
+}
+
+.Candoele {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #596e82;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+
+}
+
+.Candoele:before {
+  /* selector inserts a bullet point (•) before each list item and styles it with a bright orange color (#f06d06)*/
+  content: "•";
+  color: #f06d06;
+  display: inline-block;
+  width: 10px;
+  margin-right: 10px;
+}
+
+#giflamp {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 1%;
+  border: 2px solid black;
+}
+
+#wanttoknow {
+
+  text-align: center;
+
+}
+
+#notall {
+  margin-bottom: 0%;
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* animation for the slow fade-in effect:  https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load */
+
+#pic2what1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: 2px solid black;
+}
+
+#production_title {
+  text-align: center;
+}
+
+.mar {
+  padding: 1%;
+}
+
+.steps {
+  list-style-type: none;
+  padding: 1%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background-color: #313c47;
+  color: white;
+}
+
+.steps li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  counter-increment: step-counter;
+  /* That is here to make the counter move up, instead of staying at 0 */
+  border: 1px solid black;
+}
+
+.steps li:before {
+  content: counter(step-counter);
+  /* That is here to actually show the steps on the page as content */
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  color: #313c47;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.steps li span {
+  display: block;
+  margin-left: 40px;
+  padding: 8px;
+  padding-top: 0%;
+}
+
+#videoproduction {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  border: 2px solid black;
+}
+
+#textvid {
+
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+#picsdyn {
+
+  display: flex;
+}
+
+#Dyneemapic {
+
+  width: 40%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  border: 2px solid blanchedalmond;
+}
+
+#Dyneemapicuses {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  border: 2px solid blanchedalmond;
+  width: 40%;
+  height: 500px;
+}
+
+#picsolarinstall {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border: 2px solid black;
+
+}
+
+.power-table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  /* To merge the side borders */
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #313c47;
+  color: #ffffff;
+}
+
+th,
+td {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+th {
+  background-color: #313c47;
+}
+
+tr:nth-child(even) {
+  /* Targets all the even rows within the table */
+  background-color: #545f6a;
+}
+
+#marketwhy {
+
+  text-align: center;
+}
+
+.usefinally {
+
+  text-align: center;
+}
+
+#application-table {
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#overviewbenefitspic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border: 2px solid black;
+
+}
+
+.checkmark li {
+  font-size: 16px;
+  margin-bottom: 1em;
+  list-style-type: none;
+  padding: 0.25em 0 0 2.5em;
+  position: relative;
+  margin-left: 30%;
+  margin-top: 10px;
+  font-size: 2vmax;
+  color: #ffffff;
+}
+
+.checkmark li:before {
+  content: " ";
+  display: block;
+  border: solid 0.8em green;
+  border-radius: 0.8em;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 0.5em;
+  top: 40%;
+  margin-top: -0.5em;
+}
+
+.checkmark li:after {
+  content: " ";
+  display: block;
+  width: 0.3em;
+  height: 0.6em;
+  border: solid #fff;
+  border-width: 0 0.2em 0.2em 0;
+  position: absolute;
+  left: 1em;
+  top: 40%;
+  margin-top: -0.2em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.scrollToTopBtn {
+  text-align: center;
+  display: block;
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #545f6a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 30px;
+  margin-left: 38%;
+}
+
+.scrollToTopBtn:hover {
+  background-color: #1f2730;
+}
+
+#thanksforattention {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border: 2px solid black;
+}
